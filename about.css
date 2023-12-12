@@ -396,10 +396,10 @@
   margin-bottom: var(--dl-space-space-unit);
   flex-direction: column;
 }
-.about-text05 {
+.about-text02 {
   align-self: flex-start;
 }
-.about-text08 {
+.about-text05 {
   align-self: flex-start;
 }
 .about-container2 {
@@ -412,10 +412,10 @@
   margin-bottom: var(--dl-space-space-unit);
   flex-direction: column;
 }
-.about-text11 {
+.about-text08 {
   align-self: flex-start;
 }
-.about-text14 {
+.about-text11 {
   align-self: flex-start;
 }
 .about-container3 {
@@ -428,10 +428,10 @@
   margin-bottom: var(--dl-space-space-unit);
   flex-direction: column;
 }
-.about-text17 {
+.about-text14 {
   align-self: flex-start;
 }
-.about-text20 {
+.about-text17 {
   align-self: flex-start;
 }
 @media(max-width: 991px) {
@@ -447,28 +447,28 @@
   .about-container1 {
     align-self: center;
   }
-  .about-text05 {
+  .about-text02 {
     align-self: center;
   }
-  .about-text08 {
+  .about-text05 {
     align-self: center;
   }
   .about-container2 {
     align-self: center;
   }
-  .about-text11 {
+  .about-text08 {
     align-self: center;
   }
-  .about-text14 {
+  .about-text11 {
     align-self: center;
   }
   .about-container3 {
     align-self: center;
   }
-  .about-text17 {
+  .about-text14 {
     align-self: center;
   }
-  .about-text20 {
+  .about-text17 {
     align-self: center;
   }
 }
@@ -487,13 +487,13 @@
     padding-right: Unit;
     padding-bottom: Unit;
   }
-  .about-text05 {
+  .about-text02 {
     margin-top: Unit;
     margin-left: Unit;
     margin-right: Unit;
     margin-bottom: Unit;
   }
-  .about-text08 {
+  .about-text05 {
     margin-top: var(--dl-space-space-halfunit);
     margin-bottom: var(--dl-space-space-halfunit);
   }
@@ -508,13 +508,13 @@
     padding-right: Unit;
     padding-bottom: Unit;
   }
-  .about-text11 {
+  .about-text08 {
     margin-top: Unit;
     margin-left: Unit;
     margin-right: Unit;
     margin-bottom: Unit;
   }
-  .about-text14 {
+  .about-text11 {
     margin-top: var(--dl-space-space-halfunit);
     margin-bottom: var(--dl-space-space-halfunit);
   }
@@ -529,13 +529,13 @@
     padding-right: Unit;
     padding-bottom: Unit;
   }
-  .about-text17 {
+  .about-text14 {
     margin-top: Unit;
     margin-left: Unit;
     margin-right: Unit;
     margin-bottom: Unit;
   }
-  .about-text20 {
+  .about-text17 {
     margin-top: var(--dl-space-space-halfunit);
     margin-bottom: var(--dl-space-space-halfunit);
   }
