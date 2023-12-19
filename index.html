@@ -60,7 +60,10 @@
       <link href="./index.css" rel="stylesheet" />
 
       <div class="home-container">
-        <header data-role="Header" class="navigation-header">
+        <header
+          data-role="Header"
+          class="navigation-header navigation-root-class-name"
+        >
           <header data-thq="thq-navbar" class="navigation-navbar-interactive">
             <a href="index.html" class="navigation-navlink">
               <img
@@ -167,12 +170,14 @@
           <footer class="footer-footer footer-root-class-name1">
             <div class="footer-separator"></div>
             <nav class="footer-nav">
-              <span class="footer-text"><span>Home</span></span>
-              <span class="footer-text1"><span>About</span></span>
-              <span class="footer-text2"><span>News</span></span>
-              <span class="footer-text3"><span>Privacy Policy</span></span>
+              <a href="index.html" class="footer-navlink"><span>Home</span></a>
+              <a href="about.html" class="footer-navlink1">
+                <span>About</span>
+              </a>
+              <a href="news.html" class="footer-navlink2"><span>News</span></a>
+              <span class="footer-text"><span>Privacy Policy</span></span>
             </nav>
-            <span class="footer-text4"><span>© 2023 RapidEMS</span></span>
+            <span class="footer-text1"><span>© 2023 RapidEMS</span></span>
             <div class="footer-separator1"></div>
           </footer>
         </main>
