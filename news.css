@@ -501,7 +501,19 @@
   line-height: 1.44;
   margin-bottom: var(--dl-space-space-twounits);
 }
+.news-container1 {
+  flex: 0 0 auto;
+  width: 200px;
+  display: flex;
+  align-self: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
 .news-container2 {
+  width: 100%;
+  height: auto;
+}
+.news-container3 {
   display: contents;
 }
 .news-max-width1 {
