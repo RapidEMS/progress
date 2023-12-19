@@ -501,6 +501,9 @@
   line-height: 1.44;
   margin-bottom: var(--dl-space-space-twounits);
 }
+.news-container2 {
+  display: contents;
+}
 .news-max-width1 {
   align-items: center;
   flex-direction: column;
