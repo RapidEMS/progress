@@ -169,16 +169,42 @@
           <div class="news-container1">
             <div class="news-container2">
               <div class="news-container3">
-                <iframe
-                  src="https://raw.githack.com/RapidEMS/documents/main/Proposal.pdf?download=proposal.pdf"
-                  width="100%"
-                  height="100%"
-                >
-                  This browser does not support PDFs. Please download the PDF to
-                  view it: &#x3C;a
-                  href='https://raw.githack.com/RapidEMS/documents/main/Proposal.pdf?download=proposal.pdf'>Download
-                  PDF&#x3C;/a>.
-                </iframe>
+                <div id="pdf-container"></div>
+
+                <script>
+                  // Specify the path to your PDF file
+                  var pdfPath = 'https://rawcdn.githack.com/RapidEMS/documents/main/Proposal.pdf?min=1';
+
+                  // Specify the container where you want to embed the PDF
+                  var container = document.getElementById('pdf-container');
+
+                  // Fetch the PDF document
+                  pdfjsLib.getDocument(pdfPath).promise.then(function(pdfDoc) {
+                    // Loop through each page in the PDF
+                    for (var pageNum = 1; pageNum <= pdfDoc.numPages; pageNum++) {
+                      // Create a div element for each page
+                      var pageDiv = document.createElement('div');
+                      pageDiv.className = 'pdf-page';
+                      container.appendChild(pageDiv);
+
+                      // Render the page
+                      pdfDoc.getPage(pageNum).then(function(page) {
+                        var canvas = document.createElement('canvas');
+                        pageDiv.appendChild(canvas);
+                        var context = canvas.getContext('2d');
+                        var viewport = page.getViewport({ scale: 1.5 }); // You can adjust the scale as needed
+
+                        canvas.height = viewport.height;
+                        canvas.width = viewport.width;
+
+                        page.render({
+                          canvasContext: context,
+                          viewport: viewport
+                        });
+                      });
+                    }
+                  });
+                </script>
               </div>
             </div>
           </div>
